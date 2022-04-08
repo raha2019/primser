@@ -3,7 +3,7 @@ let input;
 
 function setup() {
     input = createFileInput(handleFile);
-    input.position(0, 0);
+    input.position(10, 55);
     createCanvas(500, 500, WEBGL);
     background(255);
 }
@@ -25,8 +25,10 @@ function draw() {
         texture(img);
         box(width / 2);
     }
+    else {
     background(250);
-        rotateY(frameCount * 0.01);
-        texture(img);
-        box(width / 2);
+    rotateY(frameCount * 0.01);
+    // texture(img);
+    box(width / 2);
+    }
 }
