@@ -25,4 +25,8 @@ function draw() {
         texture(img);
         box(width / 2);
     }
+    background(250);
+        rotateY(frameCount * 0.01);
+        texture(img);
+        box(width / 2);
 }
