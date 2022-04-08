@@ -20,7 +20,7 @@ function handleFile(file) {
 
 function draw() {
     if (img) {
-        rotateY(frameCount * 0.01);
+        rotateY(frameCount * 0.05);
         noStroke();
         texture(img);
         sphere(400);

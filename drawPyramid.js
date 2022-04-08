@@ -13,6 +13,7 @@ function handleFile(file) {
   if (file.type === 'image') {
     img = createImg(file.data, '');
     img.hide();
+    // img.resize(50, 100);
   } else {
     img = null;
   }

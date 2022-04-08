@@ -21,14 +21,8 @@ function handleFile(file) {
 function draw() {
     if (img) {
         background(250);
-        rotateY(frameCount * 0.01);
+        rotateY(frameCount * 0.05);
         texture(img);
         box(width / 2);
-    }
-    else {
-    background(250);
-    // rotateY(frameCount * 0.01);
-    // texture(img);
-    box(width / 2);
     }
 }
