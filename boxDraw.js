@@ -27,7 +27,7 @@ function draw() {
     }
     else {
     background(250);
-    rotateY(frameCount * 0.01);
+    // rotateY(frameCount * 0.01);
     // texture(img);
     box(width / 2);
     }
