@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sphere</title>
+    <a href="index.html"><button>Home</button></a>
     <h1>Sphere</h1>
     <style>
         body {
@@ -12,14 +13,19 @@
           margin: 0;
           background-color: aqua;
         }
+        #error {
+          color: red;
+        }
       </style>
 </head>
 <body>
+  <h4 id="error"></h4>
+  <h4>If an error arises, try uploading a screenshot of the photo you want to upload</h4>
   <script src="../p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
   <script src ="drawSphere.js"></script>
-  <div id="saveButton">
-    <button>Save Image</button>
-  </div>
+  <!-- <div id="saveButton">
+    <button>Save Gif</button>
+  </div> -->
 </body>

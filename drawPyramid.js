@@ -3,17 +3,25 @@ let input;
 
 function setup() {
     input = createFileInput(handleFile);
-    input.position(0, 0);
+    input.position(150, 55);
     createCanvas(500, 500, WEBGL);
     background(255);
+    frameRate(30);
+    textSize(30);
+    textAlign(TOP);
+
+    // createLoop({duration:3, gif:true});
 }
 
 function handleFile(file) {
   print(file);
   if (file.type === 'image') {
+    if (file.subtype === 'heic') {
+      console.log("This image is a heic");
+      document.getElementById("error").innerHTML = "This is a .HEIC image file, please upload a different image";
+    }
     img = createImg(file.data, '');
     img.hide();
-    // img.resize(50, 100);
   } else {
     img = null;
   }
@@ -59,5 +67,6 @@ function draw() {
       vertex(250,250,-250,1.30,1);
       
       endShape(CLOSE);
+      console.log(frameCount)
     }
 }

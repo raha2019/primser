@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyramid</title>
+    <a href="index.html"><button>Home</button></a>
     <h1>Pyramid</h1>
     <style>
         body {
@@ -12,14 +13,27 @@
           margin: 0;
           background-color: aqua;
         }
+        #error {
+          color: red;
+        }
       </style>
 </head>
 <body>
+  <h4 id="error"></h4>
+  <h4>If an error arises, try uploading a screenshot of the photo you want to upload</h4>
   <script src="../p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
   <script src ="drawPyramid.js"></script>
-  <div id="saveButton">
-    <button>Save Image</button>
-  </div>
+  <!-- <script src ="CCapture.all.min.js"></script>
+  <script src ="gif.worker.js"></script>  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+  <script src="https://unpkg.com/p5.createloop@0.2.8/dist/p5.createloop.js"></script>
+  <!-- <script>
+    var capturer
+  </script> -->
+  
+  <!-- <div id="saveButton">
+    <button>Save Gif</button>
+  </div> -->
 </body>
